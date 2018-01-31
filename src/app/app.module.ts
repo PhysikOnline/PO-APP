@@ -1,5 +1,4 @@
-import { AppErrorHandler } from './../services/ionic-errorhandler';
-// import { SentryErrorHandler } from './../services/sentry-errorhandler';
+import { SentryErrorHandler } from './../services/sentry-errorhandler';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
@@ -27,7 +26,7 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: AppErrorHandler}
+    {provide: ErrorHandler, useClass: SentryErrorHandler},
   ]
 })
 export class AppModule { }

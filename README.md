@@ -72,6 +72,9 @@ Upload files to sentry:
 sentry-cli releases -o physikonline-iu -p po-app files 0.0.1 upload-sourcemaps --url-prefix / www/build
 ```
 
+# Set up environment-variables
+(Blah)[https://www.williamghelfi.com/blog/2017/06/22/ionic-environments-webpack/]
+
 # TODO
 
 * Configure Ionic monitoring
